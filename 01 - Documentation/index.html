@@ -10,13 +10,13 @@
  */
 class Student {
 	/**
-	* Constructor function to create a Student object
-	* @constructor
-	* @param {number} age - The age of the student
-	* @param {number} averageMark - The average maark of the student
-	* @param {number} grade - The grade of the student
-	* @param {string} name - The name of the student
-	*/
+	 * Constructor function to create a Student object
+	 * @constructor
+	 * @param {number} age - The age of the student
+	 * @param {number} averageMark - The average maark of the student
+	 * @param {number} grade - The grade of the student
+	 * @param {string} name - The name of the student
+	 */
 	constructor(age, averageMark, grade, name) {
 		this.age = age;
 		this.averageMark = averageMark;
@@ -24,32 +24,32 @@ class Student {
 		this.name = name;
 	}	
 	/**
-	* Prints the age of the student
-	*/
+	 * Prints the age of the student
+	 */
 	printAge() {
 		console.log(this.age);
 	}
 	/**
-	* Prints the average mark of the student
-	*/
+	 * Prints the average mark of the student
+	 */
 	printAverageMark() {
 		console.log(this.averageMark);
 	}
 	/**
-	* Prints the grade of the student
-	*/
+	 * Prints the grade of the student
+	 */
 	printGrade() {
 		console.log(this.grade);
 	}
 	/**
-	* Prints the name of the student
-	*/
+	 * Prints the name of the student
+	 */
 	printName() {
 		console.log(this.name);
 	}
 	/**
-	* Prints whether the student will pass school
-	*/
+	 * Prints whether the student will pass school
+	 */
 	printSuccess() {
 		//console.log((this.averageMark > 50) ? this.name + " will pass school" : this.name + " will fail school");
 		if (this.averageMark > 50) {
@@ -65,17 +65,16 @@ class Student {
  * @return a Student object with random attributes
  */
 function generateStudent() {
-	const age = Math.floor(15 + Math.random() * 4);
-	const averageMark = Math.floor(Math.random() * 100);
-	const grade = age - 6;
-	let name = "";
+	const age = Math.floor(15 + Math.random() * 4); //between 15-18
+	const averageMark = Math.floor(Math.random() * 100); //between 0-100
+	const grade = age - 6; //between 9-12
+	let name = ""; //random name between 4-7 characters long
 		
 	const length = 4 + Math.floor(Math.random() * 4);
 	for (let i = 0; i < length; i++) name += String.fromCharCode(Math.floor(65 + Math.random() * 26));
 	
 	return new Student(age, averageMark, grade, name);
 }
- 
 /**
  * Function used to test object functionality
  */
