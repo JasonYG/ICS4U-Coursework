@@ -3,7 +3,7 @@
 
 <script>
 /** 
- * This class represents a John Fraser student 
+ * This class represents a student 
  *
  * @class
  * @return the object that has the attributes and methods for this Student object
@@ -11,9 +11,10 @@
 class Student {
 	/**
 	 * Constructor function to create a Student object
+	 *
 	 * @constructor
 	 * @param {number} age - The age of the student
-	 * @param {number} averageMark - The average maark of the student
+	 * @param {number} averageMark - The average mark of the student
 	 * @param {number} grade - The grade of the student
 	 * @param {string} name - The name of the student
 	 */
@@ -76,8 +77,8 @@ function generateStudent() {
 	return new Student(age, averageMark, grade, name);
 }
 /**
- * Function used to test object functionality
- */
+  * Function used to test object functionality
+  */
 function main() {
 	let compsci_students = [];
 	for (let i = 0; i < 26; i++) compsci_students.push(generateStudent());
