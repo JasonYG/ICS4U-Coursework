@@ -33,10 +33,9 @@ class SumDigits {
    * @return The sum of the integer's digits
    */
 
-  static recursiveCalculate(n, index = null) {
+  static recursiveCalculate(n, index) {
     const stringN = n.toString();
-
-    if (index !== null) {
+    if (index !== undefined) {
       return index < stringN.length
         ? parseInt(stringN.charAt(index)) +
             this.recursiveCalculate(n, index + 1)
@@ -47,4 +46,4 @@ class SumDigits {
   }
 }
 //console.log(SumDigits.iterativeCalculate(126));
-//console.log(SumDigits.recursiveCalculate(126));
+console.log(SumDigits.recursiveCalculate(126));
