@@ -46,6 +46,8 @@ class CountThePalindromes {
     return palindromeNum;
   }
   /**
+   * This function calculates the amount of palindromes that exist
+   * in a string
    *
    * @param {string} str The string that will be checked
    * @param {number} bottomIndex The current index from the bottom of the word
