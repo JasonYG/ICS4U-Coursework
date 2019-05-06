@@ -7,6 +7,31 @@
  * If you ran iterativeCalculate(126) you would get a return value of 9.
  * If you ran recursiveCalculate(126) you would also get a return value of 9.
  *
+ * Common pitfalls of recursion:
+ *
+ * Recursion uses a part of the system memory called the stack: a special part
+ * of the computer's memory that stores temporary variables. All recursive functions
+ * add to the computer's stack call, and are stored until the function call is finished.
+ * Allocating memory to the slack is greater than that of an iterative function, and
+ * in some cases, errors can result from too much memory being used from the stack
+ * (e.g. a "call stack exceeded" error). Pitfalls of recursion therefore include its
+ * more intensive use of memory compared to iterative functions, and the potential errors
+ * that could result from the call stack.
+ *
+ * Recursive functions, because of their need to repeatedly allocate memory to
+ * the stack, are generally slower than their iterative counterparts. It's almost
+ * impossible to write a recursive function that is both faster and more memory efficient
+ * than a method that uses iteration. The benefit of recursion over iteration, however,
+ * is that it often simplifies a function's implementation that makes the code more
+ * readable, easier to understand, and "elegant". In many algorithms, such as tree
+ * traversal, recursion is used for ease of understanding and implementation.
+ *
+ * Although recursion is often "cleaner" than an iterative approach, recursive functions
+ * can sometimes be harder to debug. This is because the output of the function isn't
+ * always clear and can be hard to track as the complexity of a recursive function increases.
+ * Iterative functions are advantaged in that their outputs are easier to track, and can be
+ * easier to maintain and debug.
+ *
  * @class
  */
 
